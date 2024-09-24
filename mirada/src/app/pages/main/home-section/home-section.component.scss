@@ -1,0 +1,46 @@
+@import '../../../../styles.scss';
+
+.home-section {
+  display: flex;
+  align-items: center;
+
+  .home-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+    .logo {
+      text-align: center;
+      svg {
+        width: 90%;
+        height: 300px;
+        max-width: 900px;
+      }
+    }
+
+    .clothes {
+      font-size: clamp(1rem, 4vw, 1.5rem);
+      font-weight: 200;
+      color: $font-color;
+      text-transform: uppercase;
+    }
+  }
+
+  .home-section__image {
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../../assets/main_img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}

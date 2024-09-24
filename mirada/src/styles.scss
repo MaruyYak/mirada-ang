@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+$font-family: 'Bitter';
+$font-color: #ad9f99;
+$background-color: #f8f9fa;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $font-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
