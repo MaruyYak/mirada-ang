@@ -1,3 +1,5 @@
+@import "../../../../styles.scss";
+
 .menu {
   z-index: 100;
   display: flex;
@@ -18,7 +20,7 @@
   
     .option {
       cursor: pointer;
-      color: #c6c6c6;
+      color: $font-color;
       transition: all 0.4s ease;
   
       &:hover {
@@ -33,7 +35,7 @@
   
       .menu_inst,
       .menu_telega {
-        fill: #c6c6c6;
+        fill: $font-color;
         transition: all 0.4s ease;
   
         &:hover path {

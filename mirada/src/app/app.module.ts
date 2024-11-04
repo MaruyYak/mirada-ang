@@ -8,6 +8,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { VisionSectionComponent } from './pages/main/vision-section/vision-section.component';
 
 @NgModule({
   declarations: [ 
@@ -15,13 +16,14 @@ import { AppRoutingModule } from './app-routing.module';
     MainComponent, 
     CatalogComponent, 
     HomeSectionComponent, 
+    VisionSectionComponent,
     HeaderComponent, 
     FooterComponent,
   ],
   imports: [ 
     BrowserModule, 
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [ AppComponent ]
