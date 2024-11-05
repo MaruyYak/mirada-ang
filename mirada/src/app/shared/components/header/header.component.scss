@@ -1,12 +1,12 @@
 @import "../../../../styles.scss";
 
-.menu {
+.header__menu {
   z-index: 100;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
-  position: absolute;
+  position: relative;
 
   .nav_options {
     padding-right: 30px;

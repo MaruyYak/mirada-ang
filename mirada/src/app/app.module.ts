@@ -9,6 +9,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { VisionSectionComponent } from './pages/main/vision-section/vision-section.component';
+import { CardComponent } from './pages/catalog/card/card.component';
 
 @NgModule({
   declarations: [ 
@@ -18,7 +19,7 @@ import { VisionSectionComponent } from './pages/main/vision-section/vision-secti
     HomeSectionComponent, 
     VisionSectionComponent,
     HeaderComponent, 
-    FooterComponent,
+    FooterComponent, CardComponent,
   ],
   imports: [ 
     BrowserModule, 
