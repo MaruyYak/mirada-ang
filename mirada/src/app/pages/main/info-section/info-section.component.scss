@@ -25,6 +25,11 @@
   align-items: center;
   text-align: center;
   margin-bottom: 20px;
+
+}
+
+.serf-info p {
+  font-size: clamp(0.7rem, 4vw, 1.1rem);
 }
 
 .highlight-info {
@@ -58,13 +63,11 @@
   position: relative;
 }
 
-/* Стили для тултипа */
 .tooltip-wrapper {
   position: relative;
   display: inline-block;
 }
 
-/* Скрытый тултип */
 .tooltip-text {
   visibility: hidden;
   width: 150px;

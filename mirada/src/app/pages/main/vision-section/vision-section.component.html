@@ -2,6 +2,7 @@
   <div class="vision-section__content" *ngFor="let visionCard of visionCards">
     <div class="content__image">
       <img [src]="visionCard.image" alt="preview">
+      <button class="card-button">{{ visionCard.title }}</button>
     </div>
     <div class="content__text">{{ visionCard.description }}</div>
   </div>
