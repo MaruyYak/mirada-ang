@@ -12,6 +12,7 @@ import { VisionSectionComponent } from './pages/main/vision-section/vision-secti
 import { CardComponent } from './pages/catalog/card/card.component';
 import { PreviewCardsComponent } from './pages/main/preview-cards/preview-cards.component';
 import { ButtonComponent } from './shared/components/button/button.component';
+import { InfoSectionComponent } from './pages/main/info-section/info-section.component';
 
 @NgModule({
   declarations: [ 
@@ -23,7 +24,7 @@ import { ButtonComponent } from './shared/components/button/button.component';
     HeaderComponent, 
     FooterComponent, 
     CardComponent, 
-    PreviewCardsComponent, ButtonComponent,
+    PreviewCardsComponent, ButtonComponent, InfoSectionComponent,
   ],
   imports: [ 
     BrowserModule, 
