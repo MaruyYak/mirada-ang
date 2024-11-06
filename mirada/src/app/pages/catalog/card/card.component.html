@@ -1,12 +1,26 @@
 <div class="product-card">
   <div class="product-card__image">
-    <img src="../../../../assets/desc_1.JPG" alt="Product Name"/>
+    <swiper-container
+      navigation="true"
+      pagination="true"
+      pagination-clickable="true"
+      loading="lazy"
+      >
+      <swiper-slide *ngFor="let image of productImages">
+        <img [src]="image" alt="Product Image"/>
+      </swiper-slide>
+    </swiper-container>
   </div>
-  <h3 class="product-card__title">Название товара</h3>
-  <p class="product-card__price">$123.45</p>
-  <div class="product-card__colors">
-    <span class="color-circle" style="background-color: #FF0000;"></span>
-    <span class="color-circle" style="background-color: #00FF00;"></span>
-    <span class="color-circle" style="background-color: #0000FF;"></span>
+
+  <div class="product-card__info">
+    <h3 class="product-card__info__title">Топ ACTUAL</h3>
+    <p class="product-card__info__price">123 BYN</p>
+  
+    <div class="product-card__info__colors">
+      <span class="color-circle" style="background-color: #FF0000;"></span>
+      <span class="color-circle" style="background-color: #00FF00;"></span>
+      <span class="color-circle" style="background-color: #0000FF;"></span>
+    </div>
   </div>
+
 </div>

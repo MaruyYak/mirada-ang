@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './catalog.component.scss'
 })
 export class CatalogComponent {
-
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 }

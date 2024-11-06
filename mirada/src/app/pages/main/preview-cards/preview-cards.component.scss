@@ -1,0 +1,53 @@
+@import '../../../../styles.scss';
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .preview-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-content: center;
+    padding: 50px 10px;
+
+    .preview {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+      padding: 0px;
+      width: 100%;
+      height: 100%;
+
+      .card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .card-button {
+        background-color: $background-color;
+        color: $font-color-dark;
+        padding: 5px 3px;
+        width: 165px;
+        border-radius: 2px;
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        text-align: center;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background-color: transparent;
+          color: $background-color;
+        }
+      }
+    }
+  }
+}

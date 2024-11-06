@@ -1,0 +1,15 @@
+<section class="preview-container">
+  <div class="preview-cards">
+    <div class="preview" *ngFor="let card of cards">
+      <img class="card-image" [src]="card" alt="Card image">
+      <button class="card-button">Юбка VEGA</button>
+    </div>
+  </div>
+  <app-button 
+    size="large" 
+    routerLink="/catalog"
+    [link]="''" 
+    [content]="'СМОТРЕТЬ ВСЕ'" 
+    [disabled]="false">
+</app-button>
+</section>

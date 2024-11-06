@@ -1,0 +1,13 @@
+<a 
+  *ngIf="link && !disabled" 
+  [href]="link" 
+  class="button" 
+  [ngClass]="size"
+  >{{ content }}</a>
+
+<button 
+  *ngIf="!link && !disabled" 
+  class="button" 
+  [ngClass]="size" 
+  [disabled]="disabled"
+  >{{ content }}</button>

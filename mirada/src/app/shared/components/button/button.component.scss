@@ -1,0 +1,39 @@
+@import "../../../../styles.scss";
+
+.button {
+  background: transparent;
+  border: solid 1px $font-color-dark;
+  padding: 15px 40px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+  transition-duration: 0.3s;
+  z-index: 5;
+  font-size: 1em;
+  max-width: 400px;
+  
+  &:hover {
+    border: solid 1px $font-hover-color;
+    color: $font-hover-color;
+  }
+
+  &.small {
+    font-size: 0.8em;
+    padding: 10px 15px;
+  }
+
+  &.medium {
+    font-size: 1em;
+    padding: 10px 30px;
+  }
+
+  &.large {
+    font-size: 1.2em;
+    padding: 15px 40px;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

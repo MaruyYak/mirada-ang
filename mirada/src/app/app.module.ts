@@ -1,4 +1,4 @@
-import { NgModule }      from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
 import { MainComponent } from './pages/main/main.component';
@@ -10,6 +10,8 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { VisionSectionComponent } from './pages/main/vision-section/vision-section.component';
 import { CardComponent } from './pages/catalog/card/card.component';
+import { PreviewCardsComponent } from './pages/main/preview-cards/preview-cards.component';
+import { ButtonComponent } from './shared/components/button/button.component';
 
 @NgModule({
   declarations: [ 
@@ -19,7 +21,9 @@ import { CardComponent } from './pages/catalog/card/card.component';
     HomeSectionComponent, 
     VisionSectionComponent,
     HeaderComponent, 
-    FooterComponent, CardComponent,
+    FooterComponent, 
+    CardComponent, 
+    PreviewCardsComponent, ButtonComponent,
   ],
   imports: [ 
     BrowserModule, 
@@ -27,6 +31,7 @@ import { CardComponent } from './pages/catalog/card/card.component';
     AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }
