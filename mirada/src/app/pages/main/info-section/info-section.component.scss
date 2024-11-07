@@ -4,33 +4,39 @@
   align-items: flex-start;
   padding-top: 100px;
   padding-bottom: 80px;
+
+  .dostavka-area, .sertificat-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+
+    .title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      position: relative;
+      margin: 0;
+    }
+    .dostavka-info-container, .serf-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+
+       p {
+        font-size: clamp(0.7rem, 4vw, 1.1rem);
+      }
+    }
+
+    .dostavka-info-container h3 {
+      font-weight: 400;
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      text-align: center;
+    }
+  }
 }
 
-.title {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 300;
-  position: relative;
-}
-
-.dostavka-area, .sertificat-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 48%;
-}
-
-.dostavka-info-container, .serf-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px;
-
-}
-
-.serf-info p {
-  font-size: clamp(0.7rem, 4vw, 1.1rem);
-}
 
 .highlight-info {
   color: #807973d2;
@@ -38,11 +44,6 @@
   text-align: center;
 }
 
-.dostavka-info-container h3 {
-  font-weight: 400;
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
-  text-align: center;
-}
 
 .tooltip-text {
   position: absolute;

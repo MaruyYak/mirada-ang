@@ -1,0 +1,43 @@
+<section class="values_section">
+  <div class="title">
+    <h1 class="title__text">Vision & values</h1>
+  </div>
+  
+  <div class="values_wrapper">
+    <div class="value_item" *ngFor="let value of values">
+      <img [src]="value.image" alt="girl">
+      <div class="value_item__text">
+        <p>{{ value.text }}</p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="brend">
+    <div class="brend__title">
+      <h1 class="brend__title__text"><span class="highlight" style="font-weight: 500;">MIRADA</span> - творение, в котором каждая деталь наполнена значением и вдохновением</h1>
+    </div>
+      <!-- <app-button 
+        size="medium" 
+        routerLink="/catalog"
+        [content]="'КАТАЛОГ'" 
+        [disabled]="false">
+      </app-button> -->
+    <span class="brend__dash"></span>
+    <div class="brend__content">
+      <p>
+        Наш бренд уделяет абсолютное <span class="highlight">внимание каждой детали</span> в процессе создания костюмов.
+        Вдохновленные идеей создания позитивной энергетики, мы создаем одежду,которая не только <span class="highlight">отражает утонченный стиль</span>,
+        но и становится частью вашего внутреннего мира.<br>
+      </p>
+      <p>
+        Каждое изделие, созданное нами, носит в себе заряд энергии, который способствует <span class="highlight">гармонии и равновесию.</span> 
+        Наша философия заключается в том, чтобы каждый наряд не только выглядел роскошно, 
+        но и стал источником внутренней силы и самовыражения, <span class="highlight">подчеркивая вашу&nbsp;аутентичность и стиль.</span>
+      </p>
+      <div class="brend__content__image">
+        <img *ngFor="let fabric of fabrics" [src]="fabric.image" alt="fabric.alt">
+      </div>
+    </div>
+  </div>
+</section>
+

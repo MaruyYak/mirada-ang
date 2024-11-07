@@ -19,13 +19,13 @@ export class HeaderComponent {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.updateStyles(event.urlAfterRedirects);
-        this.showLogo = event.urlAfterRedirects === '/catalog';
+        this.showLogo = event.urlAfterRedirects != '/';
       }
     });
   }
 
   private updateStyles(url: string): void {
-    this.isDarkText = url.includes('/catalog');
+    this.isDarkText = url.includes('/catalog') || url.includes('/vision-values');
     this.activeUrl = url;
     this.isPageOpen = this.activeUrl === url;
   }

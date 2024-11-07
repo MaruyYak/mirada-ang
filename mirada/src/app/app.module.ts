@@ -13,6 +13,7 @@ import { CardComponent } from './pages/catalog/card/card.component';
 import { PreviewCardsComponent } from './pages/main/preview-cards/preview-cards.component';
 import { ButtonComponent } from './shared/components/button/button.component';
 import { InfoSectionComponent } from './pages/main/info-section/info-section.component';
+import { ValuesComponent } from './pages/values/values.component';
 
 @NgModule({
   declarations: [ 
@@ -24,7 +25,10 @@ import { InfoSectionComponent } from './pages/main/info-section/info-section.com
     HeaderComponent, 
     FooterComponent, 
     CardComponent, 
-    PreviewCardsComponent, ButtonComponent, InfoSectionComponent,
+    PreviewCardsComponent, 
+    ButtonComponent, 
+    InfoSectionComponent, 
+    ValuesComponent,
   ],
   imports: [ 
     BrowserModule, 
