@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class CardComponent {
 
   productImages = [
-    '../../../../assets/1.JPG',
-    '../../../../assets/3.JPG',
-    '../../../../assets/2.JPG',
-    '../../../../assets/4.JPG',
-    '../../../../assets/3.JPG',
+    '../../../../assets/2.jpg',
+    '../../../../assets/1.jpg',
+    '../../../../assets/3.jpg',
+    '../../../../assets/4.jpg',
+    '../../../../assets/3.jpg',
  ];
 
 }

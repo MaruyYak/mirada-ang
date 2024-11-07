@@ -17,14 +17,27 @@
     font-size: 1.5em;
     list-style: none;
     transition: all 0.4s ease;
-  
-    .option a{
+
+    .option a {
       cursor: pointer;
-      color: $font-color;
       transition: all 0.4s ease;
-  
+    
+      &.dark-text {
+        color: $font-color-dark;
+      }
+    
+      &.light-text {
+        color: $font-color;
+      }
+
+      &.active {
+        color: $font-hover-color;
+        font-weight: 200;
+        cursor: default;
+      }
+    
       &:hover {
-        color: #5f5b5bdc;
+        color: $font-hover-color;
       }
     }
   
@@ -33,16 +46,29 @@
       flex-direction: row;
       column-gap: 15px;    
   
-      .menu_inst,
-      .menu_telega {
-        fill: $font-color;
+      .menu_inst ,
+      .menu_telega  {
         transition: all 0.4s ease;
+        cursor: pointer;
+
+        &.dark-fill path {
+          fill: $font-color-dark;
+        }
+  
+        &.light-fill path{
+          fill: $font-color;
+        }
   
         &:hover path {
-          fill: #5f5b5bdc;
-          cursor: pointer;
+          fill: $font-hover-color;
         }
       }
     }
   }
+}
+
+
+.main_brend_logo {
+  position: relative;
+  right: calc(42% - 308px);
 }

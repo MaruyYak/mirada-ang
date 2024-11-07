@@ -1,11 +1,11 @@
-$primary-color: #ffffff;
-$hover-color: #887964;
+@import "../../../../styles.scss";
+
 $footer-background: #121212;
 $footer-size: clamp(0.6rem, 3vw, 0.8rem);
 
 footer {
   background: $footer-background;
-  color: $primary-color;
+  color: $font-color;
   padding: 20px;
 }
 
@@ -34,32 +34,32 @@ footer {
 
   .footer__inst p,
   .footer__telega p {
-    color: $primary-color;
+    color: $font-color;
     margin-left: 10px;
     font-size: $footer-size;
 
     &:hover {
-      color: $hover-color;
+      color: $font-hover-color;
     }
   }
 
   .footer__inst path,
   .footer__telega path {
-    fill: $primary-color;
+    fill: $font-color;
   }
 }
 
 .footer__copyright {
-  color: $primary-color;
+  color: $font-color;
   font-size: $footer-size;
   text-align: center;
   
   .privacy {
-    color: $primary-color;
+    color: $font-color;
     font-size: $footer-size;
     text-decoration: none;
     &:hover {
-      color: $hover-color;
+      color: $font-hover-color;
     }
   }
 }

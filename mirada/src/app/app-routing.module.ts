@@ -8,6 +8,7 @@ export const routes: Routes = [
   { path: 'catalog', component: CatalogComponent },
   // { path: 'about', component: },
   // { path: 'privacy', component:  },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({

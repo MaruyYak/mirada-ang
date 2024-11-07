@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    position: relative; /* Добавить относительное позиционирование для родительского контейнера */
+    position: relative;
 
     .content__image,
     .content__text {
@@ -19,7 +19,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative; /* Добавить позиционирование для родительских элементов */
+      position: relative;
     }
 
     .content__image {
@@ -52,8 +52,8 @@
     flex-direction: row-reverse;
 
     .content__image .card-button {
-      left: 0; /* Для четных карточек кнопка будет слева */
-      right: initial; /* Убираем выравнивание справа */
+      left: 0;
+      right: initial;
     }
   }
 }
@@ -61,10 +61,12 @@
 .card-button {
   background-color: $background-color;
   color: $font-color-dark;
+  font-family: 'Bitter';
   padding: 10px 10px;
   width: 165px;
   border-radius: 2px;
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 2vw, 1.3rem);
+  font-weight: 300;
   text-align: center;
   position: absolute;
   bottom: 0;
