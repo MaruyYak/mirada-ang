@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-vision-section',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './vision-section.component.scss'
 })
 
-export class VisionSectionComponent {
+export class VisionSectionComponent implements OnInit {
 
   visionCards: { 
     image: string, 

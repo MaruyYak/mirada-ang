@@ -6,8 +6,8 @@
     <section>
       <a routerLink="/vision-values" (click)="closeMenu()">О БРЕНДЕ</a>
       <a routerLink="/catalog" (click)="closeMenu()">КАТАЛОГ</a>
-      <a (click)="navigateToSection('info')" (click)="closeMenu()">СЕРТИФИКАТ</a>
-      <a (click)="navigateToSection('info')" (click)="closeMenu()">ДОСТАВКА</a>
+      <a (click)="navigateToSection('info')" (click)="closeMenu()" tabindex="0" (keyup.enter)="closeMenu()">СЕРТИФИКАТ</a>
+      <a (click)="navigateToSection('info')" (click)="closeMenu()" tabindex="0" (keyup.enter)="closeMenu()">ДОСТАВКА</a>
       <div class="socials">
           <p class="follow_us">Follow Us</p>
           <div class="socials_icons">

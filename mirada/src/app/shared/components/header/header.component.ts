@@ -1,4 +1,4 @@
-import { Component, HostListener, Input } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
@@ -7,13 +7,13 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 
-export class HeaderComponent {
-  isPageOpen: boolean = false;
-  isDarkText: boolean = false;
-  showLogo: boolean = false;
-  activeUrl: string = '';
-  isMobile: boolean = window.innerWidth <= 768;
-  isMenuOpen: boolean = false;
+export class HeaderComponent implements OnInit {
+  isPageOpen = false;
+  isDarkText = false;
+  showLogo = false;
+  activeUrl = '';
+  isMobile = window.innerWidth <= 768;
+  isMenuOpen = false;
 
   constructor(private router: Router) {}
 

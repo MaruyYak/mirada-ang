@@ -8,11 +8,11 @@ import { Component, Input } from '@angular/core';
 export class ButtonComponent {
   @Input() size: 'small' | 'medium' | 'large' = 'medium';
 
-  @Input() link: string = '';
+  @Input() link = '';
 
-  @Input() content: string = '';
+  @Input() content = '';
 
-  @Input() disabled: boolean = false;
+  @Input() disabled = false;
 
   get buttonClass() {
     return `btn-${this.size}`;

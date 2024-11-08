@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrl: './burger-menu.component.scss'
 })
 export class BurgerMenuComponent {
-  isOpen: boolean = false;
+  isOpen = false;
 
   constructor(private router: Router) {}
 

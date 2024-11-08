@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-values',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './values.component.scss'
 })
 
-export class ValuesComponent {
+export class ValuesComponent implements OnInit {
   values: { 
     image: string, 
     text: string, 
