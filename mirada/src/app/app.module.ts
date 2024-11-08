@@ -14,6 +14,7 @@ import { PreviewCardsComponent } from './pages/main/preview-cards/preview-cards.
 import { ButtonComponent } from './shared/components/button/button.component';
 import { InfoSectionComponent } from './pages/main/info-section/info-section.component';
 import { ValuesComponent } from './pages/values/values.component';
+import { BurgerMenuComponent } from './shared/components/header/burger-menu/burger-menu.component';
 
 @NgModule({
   declarations: [ 
@@ -28,7 +29,8 @@ import { ValuesComponent } from './pages/values/values.component';
     PreviewCardsComponent, 
     ButtonComponent, 
     InfoSectionComponent, 
-    ValuesComponent,
+    ValuesComponent, 
+    BurgerMenuComponent,
   ],
   imports: [ 
     BrowserModule, 

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
@@ -12,6 +12,8 @@ export class HeaderComponent {
   isDarkText: boolean = false;
   showLogo: boolean = false;
   activeUrl: string = '';
+  isMobile: boolean = window.innerWidth <= 768;
+  isMenuOpen: boolean = false;
 
   constructor(private router: Router) {}
 
@@ -32,5 +34,18 @@ export class HeaderComponent {
 
   isActive(url: string): boolean {
     return this.activeUrl === url;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.isMobile = window.innerWidth <= 768;
+  }
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
   }
 }
