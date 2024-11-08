@@ -16,12 +16,13 @@
     <div class="brend__title">
       <h1 class="brend__title__text"><span class="highlight" style="font-weight: 500;">MIRADA</span> - творение, в котором каждая деталь наполнена значением и вдохновением</h1>
     </div>
-      <!-- <app-button 
+      <app-button 
+       *ngIf="isMobile"
         size="medium" 
         routerLink="/catalog"
         [content]="'КАТАЛОГ'" 
         [disabled]="false">
-      </app-button> -->
+      </app-button>
     <span class="brend__dash"></span>
     <div class="brend__content">
       <p>

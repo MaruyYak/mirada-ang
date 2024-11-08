@@ -3,6 +3,7 @@
 .vision-section {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 
   .vision-section__content {
     display: flex;
@@ -62,8 +63,8 @@
   background-color: $background-color;
   color: $font-color-dark;
   font-family: 'Bitter';
-  padding: 2%;
-  width: 160px;
+  padding: 3px 2px;
+  width: 165px;
   border-radius: 2px;
   font-size: clamp(0.8rem, 2vw, 1.3rem);
   font-weight: 300;

@@ -6,14 +6,14 @@
   
   .catalog__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
     column-gap: 10px;
     row-gap: 15px;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 30px;
 
     @media (max-width: 490px) {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     }
   }
 }

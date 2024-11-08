@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-values',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ValuesComponent implements OnInit {
+  isMobile = window.innerWidth <= 768;
+
   values: { 
     image: string, 
     text: string, 
@@ -20,6 +22,11 @@ export class ValuesComponent implements OnInit {
   ngOnInit(): void {
     this.loadvalues();
     this.loadfabric();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.isMobile = window.innerWidth <= 768;
   }
 
   loadvalues(): void {

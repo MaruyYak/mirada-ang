@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 40px;
 
   .preview-cards {
     display: grid;
@@ -11,7 +12,6 @@
     column-gap: 10px;
     row-gap: 15px;
     justify-content: center;
-    padding: 50px 0;
 
     @media screen and (max-width: 710px) {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 

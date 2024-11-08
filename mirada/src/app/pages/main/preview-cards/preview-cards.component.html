@@ -6,7 +6,16 @@
     </div>
   </div>
   <app-button 
+    *ngIf="!isMobile"
     size="large" 
+    routerLink="/catalog"
+    [link]="''" 
+    [content]="'СМОТРЕТЬ ВСЕ'" 
+    [disabled]="false">
+  </app-button>
+  <app-button 
+    *ngIf="isMobile"
+    size="medium" 
     routerLink="/catalog"
     [link]="''" 
     [content]="'СМОТРЕТЬ ВСЕ'" 
