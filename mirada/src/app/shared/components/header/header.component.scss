@@ -74,6 +74,7 @@
 
 .main_brend_logo {
   position: relative;
+  z-index: 15;
   right: calc(42% - 308px);
 
   @media (max-width: 768px) {
@@ -83,6 +84,6 @@
     right: 35%;
   }
   @media (max-width: 430px) {
-    right: 30%;
+    right: 33%;
   }
 }

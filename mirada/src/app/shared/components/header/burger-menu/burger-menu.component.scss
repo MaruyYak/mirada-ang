@@ -4,8 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 15px;
-
+  
   .follow_us {
     font-size: 0.8rem;
     color: $font-color;
@@ -14,7 +13,12 @@
   .socials_icons {
     display: flex;
     justify-content: center;
-    column-gap: 15px;
+    gap: 10px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
@@ -31,7 +35,7 @@
   width: 30px;
   height: 50px;
   cursor: pointer;
-  z-index: 20;
+  z-index: 200;
   left: 10px;
   top: 10px;
   transition: all 0.3s ease-in-out;
@@ -103,7 +107,7 @@
   height: 100vh;
   background-color: #09090996;
   backdrop-filter: blur(20px);
-  z-index: 10;
+  z-index: 200;
   transform-origin: top;
   opacity: 0;
   transform: translateY(-100%);

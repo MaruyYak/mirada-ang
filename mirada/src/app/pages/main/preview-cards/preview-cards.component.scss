@@ -42,7 +42,7 @@
         padding: 3px 5px;
         width: 165px;
         text-align: center;
-        font-size: 1.3em;
+        font-size: clamp(0.8rem, 2vw, 1.3rem);
         font-weight: 300;
         position: absolute;
         bottom: 0;

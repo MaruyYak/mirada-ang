@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.updateStyles(event.urlAfterRedirects);
-        this.showLogo = event.urlAfterRedirects != '/';
+        this.showLogo = event.urlAfterRedirects != '/' && event.urlAfterRedirects != '/#info' ;
       }
     });
   }
