@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CatalogItem } from '../../../shared/models/item-base.models';
 
 @Component({
   selector: 'app-card',
@@ -6,13 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
+  @Input() card!: CatalogItem;
+  selectedColorIndex = 0;
 
-  productImages = [
-    '../../../../assets/2.jpg',
-    '../../../../assets/1.jpg',
-    '../../../../assets/3.jpg',
-    '../../../../assets/4.jpg',
-    '../../../../assets/3.jpg',
- ];
+  constructor() {}
 
+  ngOnInit(): void {}
+
+  selectColor(index: number): void {
+    this.selectedColorIndex = index;
+  }
 }

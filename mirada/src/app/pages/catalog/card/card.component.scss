@@ -75,14 +75,23 @@ swiper-container {
   }
 
   .color-circle {
+    cursor: pointer;
+    opacity: 0.9;
+    border: 1px solid transparent;
+    transition: opacity 0.3s;
+    border-radius: 100%;
     width: 20px;
     height: 20px;
-    border-radius: 100px;
-    border: 1px solid transparent;
-    cursor: pointer;
 
-    &:hover {
-      border: 1px solid $font-color-dark;
+    img {
+      width: 20px;
+      height: 20px;
+      border-radius: 100%
+    }
+
+    &.active {
+      opacity: 1;
+      border: 1px solid #27110b;
     }
   }
 }

@@ -4,23 +4,25 @@
       navigation="true"
       pagination="true"
       pagination-clickable="true"
-      loading="lazy"
-      >
-      <swiper-slide *ngFor="let image of productImages">
-        <img [src]="image" alt="Product Image"/>
+      loading="lazy">
+      <swiper-slide *ngFor="let photo of card.itemInfo[selectedColorIndex].photos">
+        <img [src]="photo" [alt]="card.itemName"/>
       </swiper-slide>
     </swiper-container>
   </div>
 
   <div class="product-card__info">
-    <h3 class="product-card__info__title">Топ ACTUAL</h3>
-    <p class="product-card__info__price">123 BYN</p>
-  
+    <h3 class="product-card__info__title">{{ card.itemName }}</h3>
+    <p class="product-card__info__price">{{ card.itemInfo[selectedColorIndex].price }}</p>
+
     <div class="product-card__info__colors">
-      <span class="color-circle" style="background-color: #FF0000;"></span>
-      <span class="color-circle" style="background-color: #00FF00;"></span>
-      <span class="color-circle" style="background-color: #0000FF;"></span>
+      <span 
+        class="color-circle" 
+        *ngFor="let color of card.itemInfo; let i = index" 
+        (click)="selectColor(i)"
+        [class.active]="i === selectedColorIndex">
+        <img [src]="color.colorImg" [alt]="color.colorName">
+      </span>
     </div>
   </div>
-
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CatalogData } from '../../shared/catalog-base/items-base';
 
 @Component({
   selector: 'app-catalog',
@@ -6,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './catalog.component.scss'
 })
 export class CatalogComponent implements OnInit {
+  catalog = CatalogData;
+
+  constructor() { }
+
   ngOnInit() {
     window.scrollTo(0, 0);
   }
-
-  // handleFilters(filters: { categories: string[]; colors: string[]; maxPrice: number }) {
-  //   // Логика применения фильтров на массиве cardItems или для отображения отфильтрованных результатов
-  // }
 }

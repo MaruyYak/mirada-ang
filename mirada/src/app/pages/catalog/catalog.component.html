@@ -1,11 +1,5 @@
 <section class="catalog">
   <div class="catalog__grid">
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
+    <app-card *ngFor="let card of catalog" [card]="card"></app-card>
   </div>
-  <!-- <app-card *ngFor="let card of cards" [card]="card"></app-card> -->
 </section>
