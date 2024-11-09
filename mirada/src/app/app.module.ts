@@ -15,6 +15,8 @@ import { ButtonComponent } from './shared/components/button/button.component';
 import { InfoSectionComponent } from './pages/main/info-section/info-section.component';
 import { ValuesComponent } from './pages/values/values.component';
 import { BurgerMenuComponent } from './shared/components/header/burger-menu/burger-menu.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ImageModalComponent } from './pages/catalog/image-modal/image-modal.component';
 
 @NgModule({
   declarations: [ 
@@ -31,13 +33,16 @@ import { BurgerMenuComponent } from './shared/components/header/burger-menu/burg
     InfoSectionComponent, 
     ValuesComponent, 
     BurgerMenuComponent,
+    ImageModalComponent,
   ],
   imports: [ 
     BrowserModule, 
     RouterModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [ AppComponent ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

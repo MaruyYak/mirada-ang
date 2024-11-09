@@ -11,6 +11,8 @@ export const CatalogData = [
         photos: [
           '../../../assets/catalog/skirt-arabic/white/IMG_20240609_142407_785.jpg',
           '../../../assets/catalog/skirt-arabic/white/IMG_20241000007250.jpg',
+          '../../../assets/catalog/skirt-arabic/white/IMG_20241000007250.jpg',
+          '../../../assets/catalog/skirt-arabic/white/IMG_20241000007253.jpg',
           '../../../assets/catalog/skirt-arabic/white/IMG_20241000007253.jpg',
         ], 
       },

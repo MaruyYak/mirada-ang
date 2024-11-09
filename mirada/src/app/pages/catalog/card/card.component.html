@@ -5,7 +5,7 @@
       pagination="true"
       pagination-clickable="true"
       loading="lazy">
-      <swiper-slide *ngFor="let photo of card.itemInfo[selectedColorIndex].photos">
+      <swiper-slide *ngFor="let photo of card.itemInfo[selectedColorIndex].photos; let i = index" (click)="openModal(i)">
         <img [src]="photo" [alt]="card.itemName"/>
       </swiper-slide>
     </swiper-container>
@@ -25,4 +25,13 @@
       </span>
     </div>
   </div>
+
+  <app-image-modal 
+    *ngIf="showModal"
+    [images]="card.itemInfo[selectedColorIndex].photos"
+    [name]="card.itemName"
+    [initialSlide]="initialSlideIndex"
+    (closeModalEvent)="closeModal()">
+  </app-image-modal>
 </div>
+

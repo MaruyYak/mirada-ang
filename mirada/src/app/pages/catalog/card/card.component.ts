@@ -9,10 +9,17 @@ import { CatalogItem } from '../../../shared/models/item-base.models';
 export class CardComponent {
   @Input() card!: CatalogItem;
   selectedColorIndex = 0;
+  showModal = false;
+  initialSlideIndex = 0;
 
-  constructor() {}
+  openModal(imageIndex: number) {
+    this.initialSlideIndex = imageIndex;
+    this.showModal = true;
+  }
 
-  ngOnInit(): void {}
+  closeModal() {
+    this.showModal = false;
+  }
 
   selectColor(index: number): void {
     this.selectedColorIndex = index;
